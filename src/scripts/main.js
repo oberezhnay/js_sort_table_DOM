@@ -13,8 +13,9 @@ tableHead.addEventListener('click', (e) => {
     rows.sort(sortRows(indexCol));
 
     for (const row of rows) {
-      table.append(row);
+      tableBody[0].append(row);
     }
+    table.append(tableBody[0]);
   }
 });
 
